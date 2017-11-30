@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Gllacy Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"
+    rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Gllacy Shop">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
         </a>
         <ul class="site-navigation">
           <li><a class="site-navigation-current" href="info.html">Каталог</a></li>
@@ -29,7 +33,7 @@
             </li>
         </ul>
       </div>
-      <ul>
+      <ul class="timetable">
           <li class="time">С 10 до 20, ежедневно</li>
           <li class="phone">8 812 450-25-25</li>
       </ul>
@@ -43,41 +47,41 @@
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter-box" action="https://echo.htmlacademy.ru" method="post">
           <label for="sort">Сортировка:</label>
-                <select id="sort">
+                <select name="sort">
                   <option value="popular">по популярности</option>
                   <option value="cheap">сначала недорогие</option>
                   <option value="expensive">сначала дорогие</option>
                   <option value="fatness">по жирности</option>
                 </select>
-          <label>Сортировка:
+          <label class="visually-hidden range-label">Сортировка:
                 <input type="range" min="100" max="250" step="10" value="100">
                 <input class="second-range" type="range" min="250" max="500" step="10" value="500">
           </label>
           <fieldset class="filter-category">
                 <legend>Жирность:</legend>
 
-                  <input name="fatness" type="radio" value="0" id="zero">
+                  <input class="filter-input" name="fatness" type="radio" value="0" id="zero">
                   <label for="zero">0%</label>
-                  <input name="fatness" type="radio" value="10" id="ten" checked>
+                  <input class="filter-input" name="fatness" type="radio" value="10" id="ten" checked>
                   <label for="ten">до 10%</label>
-                  <input name="fatness" type="radio" value="30" id="thirty">
+                  <input class="filter-input" name="fatness" type="radio" value="30" id="thirty">
                   <label for="thirty">до 30%</label>
-                  <input name="fatness" type="radio" value="больше 30" id="more-thirty">
+                  <input class="filter-input" name="fatness" type="radio" value="больше 30" id="more-thirty">
                   <label for="more-thirty">выше 30%</label>
               </fieldset>
               <fieldset class="filter-category">
                     <legend>Наполнители:</legend>
-                      <input type="checkbox" value="шоколадные" id="chocolate" checked>
+                      <input class="filter-input" type="checkbox" value="шоколадные" id="chocolate" checked>
                       <label for="chocolate">шоколадные</label>
-                      <input type="checkbox" value="сахарные присыпки" id="sugar" checked>
+                      <input class="filter-input" type="checkbox" value="сахарные присыпки" id="sugar" checked>
                       <label for="sugar">сахарные присыпки</label>
-                      <input type="checkbox" value="фрукты" id="fruit">
+                      <input class="filter-input" type="checkbox" value="фрукты" id="fruit">
                       <label for="fruit">фрукты</label>
-                      <input type="checkbox" value="сиропы" id="syrup">
+                      <input class="filter-input" type="checkbox" value="сиропы" id="syrup">
                       <label for="syrup">сиропы</label>
-                      <input type="checkbox" value="джемы" id="jam">
+                      <input class="filter-input" type="checkbox" value="джемы" id="jam">
                       <label for="jam">джемы</label>
               </fieldset>
               <button class="filter-button" type="submit" value="Применить">Применить</button>
@@ -102,6 +106,7 @@
             <p class="catalog-item-price">
               <b>310 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
               <p class="catalog-item-image">
@@ -118,6 +123,7 @@
             <p class="catalog-item-price">
               <b>380 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -135,6 +141,7 @@
               <p class="catalog-item-price">
               <b>355 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -151,6 +158,7 @@
               <p class="catalog-item-price">
               <b>415 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -167,6 +175,7 @@
               <p class="catalog-item-price">
               <b>325 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -183,6 +192,7 @@
             <p class="catalog-item-price">
               <b>410 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -199,6 +209,7 @@
               <p class="catalog-item-price">
               <b>375 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -215,6 +226,7 @@
             <p class="catalog-item-price">
               <b>320 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -231,6 +243,7 @@
               <p class="catalog-item-price">
               <b>440 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -247,6 +260,7 @@
             <p class="catalog-item-price">
               <b>435 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -263,6 +277,7 @@
               <p class="catalog-item-price">
               <b>435 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -279,6 +294,7 @@
             <p class="catalog-item-price">
               <b>420 ₽<span class="price">/кг</span></b>
             </p>
+            <a class="item-button" href="#" class="button">Быстрый просмотр</a>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -300,7 +316,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer-social">
-        <ul>
+        <ul class="social">
           <li><a class="social-button" href="#">Твиттер</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -308,7 +324,7 @@
         </ul>
       </div>
       <p class="footer-contacts">
-        <ul>
+        <ul class="contacts">
           <li class="heart"><a class="footer-contacts-link" href="#">Для поставщиков</a></li>
           <li><a class="footer-contacts-link" href="#">Наши документы</a></li>
           <li><a class="footer-contacts-link" href="#">О производстве</a></li>
@@ -316,21 +332,21 @@
         </ul>
       </p>
       <p class="footer-copyright">
-        <b>Сделано в:</b>
+        <span>Сделано в:</span>
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
-    <section>
+    <section class="catalog-menu-box">
       <h2 class="visually-hidden">Меню каталога</h2>
       <ul class="catalog-menu">
-        <li><strong>Новинки</strong></li>
-        <li><a href="#">Сливочное</a></li>
+        <li>Новинки</li>
+        <li><a href="inner.html">Сливочное</a></li>
         <li><a href="#">Щербеты</li>
         <li><a href="#">Фруктовый лед</li>
         <li><a href="#">Мелорин</li>
       </ul>
     </section>
-    <section>
+    <section class="search-box">
       <h2 class="visually-hidden">Поиск</h2>
       <a class="button-search" href="search.html"></a>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -367,7 +383,7 @@
                 <div class="cart-total-price">Итого: 750 руб.</div>
                 <button class="site-button cart-submit-button" type="submit" value="Оформить заказ">Оформить заказ</button>
     </section>
-    <section>
+    <section class="login-form-box">
       <h2 class="visually-hidden">Личный кабинет</h2>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>

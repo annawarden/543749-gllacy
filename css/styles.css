@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: white;
+  background-color: #849d8f;     /*общие настройки*/
+
+}
+
+a {
+  line-height: 18px;
+  color: white;
+  text-decoration: none;       /*для ссылок*/
+}
+
+.breadcrumbs a,
+.login-form-box a
+ {
+  text-decoration: underline;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.user-navigation {
+  font-weight: medium;
+  font-size: 14px;
+  line-height: 16px;          /*для меню навигации*/
+}
+
+.site-navigation {
+  line-height: 18px;
+  color: white;
+}
+
+.site-navigation li {
+  font-weight: bold;
+  border-bottom: 1px solid #a9bbb1;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.site-navigation,
+.user-navigation,
+.timetable {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #000000;
+  background-color: #f7f6f3;
+}
+
+a:hover,
+a:focus
+a:active {
+  color: #ffbc9e;
+}
+
+.offer-list,
+.hit-items-list,
+.about-us-row,
+.additional-list,
+.social,
+.contacts,                   /* убрать точки пунктов списка  */
+.catalog-menu,
+.breadcrumbs,
+.catalog-list,
+.pagination-list {
+  list-style: none;
+}
+
+.slider-item {
+  text-align: center;
+}
+
+.slider-item p {
+  text-align: center;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.slider h2 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+.offer-item p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.offer-item h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.offer-cho-btn,
+.offer-jam-btn,
+.item-button,
+.subscribe-btn,
+.site-button,
+.contacts-button,
+.enter-button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.take-two-btn {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
+  color: white;
+}
+
+.hit-items-list li,
+.catalog-list li {
+  text-align: center;
+}
+
+span.catalog-category,
+span.hit-category {     /* на иннере почему-то подписи мороженого жирные. никак не могу изменить */
+  text-align: center;
+  font-weight: medium;
+  border-bottom: 1px solid #a9bbb1;
+}
+
+p.hit-item-price,
+p.catalog-item-price {
+  text-align: left;
+}
+
+
+button,
+.item-button {
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+
+  background-color: #ec593c;
+  border: none;
+  border-radius: 50px;
+}
+
+.item-button:hover,
+.item-button:focus,
+.item-button:active,
+button:hover,
+button:focus,
+button:active {
+  background-color: #f07963;
+}
+
+h3.about-us {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: medium;
+  color: #323232;
+}
+
+.about-us-columns {
+  color: #323232;
+
+  background-color: #e8dcc0;
+  background-image: url("../img/waffle-bg.jpg");
+  background-repeat: repeat-x;
+}
+
+.offer-item:first-child {
+  background-color: #7e152f;
+  background-image: url("../img/raspberry-bg.jpg");
+}
+
+.offer-item:last-child {
+  background-color: #4f3020;
+  background-image: url("../img/choco-bg.jpg");
+}
+
+.hit-item-price b,
+.catalog-item-price b {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;     /* цена */
+}
+
+.hit-item-price span,
+.catalog-item-price span {     /* /кг */
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.additional-item h3 {
+  color: #5a5a5a;
+  font-weight: medium;
+}
+
+.additional-item a {
+  font-size: 24px;
+  line-height: 30px;
+  color: #353535;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.additional-list {
+  background-color: #ff7393;
+  background-image: url("../img/strawberry-bg.jpg");
+}
+
+.additional-list form {
+  background-color: #f8f7f4;
+  background-image: url("../img/postal-bkgrd.jpg");
+}
+
+.subscribe-item {
+  font-weight: bold;
+  color: #5a5a5a;
+}
+
+.contacts {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232
+}
+
+.contacts span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232
+}
+
+.contacts li,
+.footer-copyright  {
+  font-size: 13px;
+  line-height: 18px;
+}
+.heart,
+.catalog-menu li:first-child {
+  font-weight: bold;
+}
+
+.catalog-menu,
+.catalog-menu a  {
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.catalog-menu li:nth-child(3) a {
+  background-color: #d07058;
+  color: #ffffff;
+}
+
+.catalog-menu a:hover,
+.catalog-menu a:focus {
+  color: #323232;
+  background-color: #f8f7f4; /* не могу понять почему Щербеты не реагируют на это свойство
+                             . из-за недостаточной специфичности? не знаю, как исправить
+                             + фон накладывается на фон кнопок меню и их не видно */
+}
+
+.catalog-menu a:active {
+  background-color: #f6b5a5;
+}
+
+.question span {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: medium;
+  color: #323232;
+}
+
+.hit-item:hover,
+.hit-item:focus,
+.catalog-item:hover,
+.catalog-item:focus {
+  background-color: white;
+  opacity: 0.2;    /* не знаю как сделать, чтобы фон не накладывался сверху и не
+                     загораживал . до этого же фоны нормально подключались */
+}
+
+.catalog-menu-box {
+  background-color: #f8f7f4;
+}      /* та же проблема  */
+
+.pagination-item-current a {
+  color: #323232;
+  background-color: white;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #323232;
+}
+.filter-input {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+select,
+.filter-button {
+color: white;
+background-color: rgba(247, 246, 243, 0.2); /* получилось только так, но это не очень удобно.
+                                            а как через опасити прозрачный подключать?  */
+}
+
+.filter-button {
+  font-weight: medium;
+}
+
+legend,
+.range-label,
+label[for="sort"] {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: medium;
+}
+
+.site-navigation-current {
+  background-color: #d07058;
+}
+
+.cart-total-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.cart-block{
+  background-color: #f8f7f4;
+}
+
+.cart-item,
+.cart-item a {
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.cart-item span {
+  color: #999999;
+}
+
+.catalog-item:hover,
+.hit-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-box,
+.login-form-box,
+.question {
+  background-color: #f8f7f4;
+}
